@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    transition: 1s ease;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: rgb(240, 226, 226);
+    overflow: hidden;
+}
+.conteneur-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.formulaire{
+    height: 80vh;
+    width: 70vw;
+    background: rgb(255, 255, 255);
+    display: flex;
+}
+.gauche{
+    height: 80vh;
+    width: 45vw;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.firstbox.visibility{
+    opacity: 0;
+}
+.firstbox a{
+    color: rgb(148, 51, 13);
+    cursor: pointer;
+}
+.hidden-box{
+    position: absolute;
+    opacity: 0;
+    display: none;
+}
+.hidden-box.visible{
+    opacity: 1;
+    display: block;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gauche h3{
+    color: orangered;
+    font-size: 2rem;
+    text-align: center;
+}
+.gauche p{
+    color: gray;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.gauche .input{
+    height: 4vh;
+    width: 20vw;
+    margin-top: -10px;
+    border: none;
+    background: rgb(231, 223, 223);
+    padding: 10px;
+}
+#signin{
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 30px;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+#signup{
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 30px;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+#signin:hover{
+    background: transparent;
+    border: 1px solid orangered;
+    color: orangered;
+}
+#btn{
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+#btn-2{
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+.hidde-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+}
+.hidde-content p{
+    color: rgb(238, 219, 219);
+    margin: 20px;
+}
+.content.opac{
+    opacity: 0;
+    display: none;
+}
+.hidde-content.opa{
+    opacity: 1;
+    visibility: visible;
+}
+#btn:hover{
+    background: white;
+    color: orangered;
+}
+#btn-2:hover{
+    background: white;
+    color: orangered;
+}
+.droite{
+    height: 80vh;
+    width: 25vw;
+    background: rgba(223, 65, 8, 0.932);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content h1{
+    color: white;
+}
+.content p{
+    color: rgb(238, 219, 219);
+    margin: 20px;
+}
+.droite.anim{
+    transform: translateX(-88.7vh);
+    animation: animate 1000ms linear ;
+}
+.gauche.anime{
+    transform: translateX(47.7vh);
+    
+}
+
+@keyframes animate {
+    0%{
+        width: 40vw;
+    }
+    100%{
+        width: 25vw;
+    }
+}
